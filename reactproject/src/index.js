@@ -4,31 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function Hello(props) {
+  return <h1>Hello World!</h1>;
+}
+
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ /**
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+ */
+
+
+root.render(<Hello />);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-function MyButton() {
-  return (
-    <button>
-      I'm a button
-    </button>
-  );
-}
 
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
+
